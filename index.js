@@ -183,7 +183,17 @@
               events = [events];
             }
             events.forEach(function (eventName) {
-              document.addEventListener(eventName, fn);
+
+              if (document.addEventListener) {
+                document.addEventListener(eventName, fn);
+              } else {
+                if (eventName.indexOf('touch') !== -1) {
+                  document.attachEvent("on" + eventName, fn);
+                } else {
+                  document.attachEvent(eventName, fn);
+                }
+
+              }
             });
           }
         },
