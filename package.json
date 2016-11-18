@@ -1,14 +1,15 @@
 {
-  "name": "react-onclickoutside",
+  "name": "react-onclickoutside-ie8",
   "version": "5.7.2",
   "description": "An onClickOutside mixin for React components",
   "main": "index.js",
   "files": [
     "index.js"
   ],
-  "homepage": "https://github.com/Pomax/react-onclickoutside",
+  "homepage": "https://github.com/raganowicz/react-onclickoutside",
   "authors": [
-    "Pomax <pomax@nihongoresources.com>"
+    "Pomax <pomax@nihongoresources.com>",
+    "Tomasz Raganowicz <tomasz.raganowicz@gmail.com"
   ],
   "keywords": [
     "react",
@@ -19,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pomax/react-onclickoutside.git"
+    "url": "git+https://github.com/raganowicz/react-onclickoutside.git"
   },
   "bugs": {
     "url": "https://github.com/Pomax/react-onclickoutside/issues"
@@ -52,5 +53,9 @@
     "react-test-renderer": "^15.0.0",
     "require-hijack": "^1.2.1",
     "webpack": "^1.12.14"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Tomasz Raganowicz <tomasz.raganowicz@gmail.com>"
 }

@@ -2,8 +2,25 @@ This has been modified by myself, in order to make it work on IE8. I am not a Ja
 
 TL;DR; In `enableOnClickOutside` method it uses `addEventListener` if available, if not it falls back to: `attachEvent`
 
+## Installation
+
+Use `npm`:
+
+```
+$> npm install react-onclickoutside--ie8 --save
+```
+
+(or `--save-dev` depending on your needs). You then use it in your components as:
+
+```javascript
+var onClickOutside = require('react-onclickoutside-ie8');
+````
+
+######Disclaimer
+I am not an author of the original component. I've just made it work on IE8.
+Please be emollient, as it's my first open sourced change :)
 #########################
-Original component README.MD below:
+#####Original component README.MD below:
 # An onClickOutside wrapper for React components
 
 This is a React **H**igher **O**rder **C**omponent that you can use with your own React components if you want to have them listen for clicks that occur somewhere in the document, outside of the element itself (for instance, if you need to hide a menu when people click anywhere else on your page).
