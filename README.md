@@ -2,6 +2,7 @@ This has been modified by myself, in order to make it work on IE8. I am not a Ja
 
 TL;DR; In `enableOnClickOutside` method it uses `addEventListener` if available, if not it falls back to: `attachEvent`
 
+Keywords: react-onclickoutside, IE8, react-onclickoutside-ie8
 ## Installation
 
 Use `npm`:

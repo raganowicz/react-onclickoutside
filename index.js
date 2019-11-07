@@ -1,3 +1,5 @@
+var createReactClass = require('create-react-class');
+
 /**
  * A higher-order-component for handling onClickOutside for React components.
  */
@@ -71,7 +73,7 @@
 
     // The actual Component-wrapping HOC:
     return function onClickOutsideHOC(Component, config) {
-      var wrapComponentWithOnClickOutsideHandling = React.createClass({
+      var wrapComponentWithOnClickOutsideHandling = createReactClass({
         statics: {
           /**
            * Access the wrapped Component's class.
@@ -127,12 +129,12 @@
           }
 
           var fn = this.__outsideClickHandler = generateOutsideCheck(
-            ReactDOM.findDOMNode(instance),
-            instance,
-            clickOutsideHandler,
-            this.props.outsideClickIgnoreClass || IGNORE_CLASS,
-            this.props.preventDefault || false,
-            this.props.stopPropagation || false
+              ReactDOM.findDOMNode(instance),
+              instance,
+              clickOutsideHandler,
+              this.props.outsideClickIgnoreClass || IGNORE_CLASS,
+              this.props.preventDefault || false,
+              this.props.stopPropagation || false
           );
 
           var pos = registeredComponents.length;
@@ -147,8 +149,8 @@
         },
 
         /**
-        * Track for disableOnClickOutside props changes and enable/disable click outside
-        */
+         * Track for disableOnClickOutside props changes and enable/disable click outside
+         */
         componentWillReceiveProps: function(nextProps) {
           if (this.props.disableOnClickOutside && !nextProps.disableOnClickOutside) {
             this.enableOnClickOutside();

@@ -1,6 +1,6 @@
 {
   "name": "react-onclickoutside-ie8",
-  "version": "5.7.2",
+  "version": "5.7.5",
   "description": "An onClickOutside mixin for React components",
   "main": "index.js",
   "files": [
@@ -9,7 +9,7 @@
   "homepage": "https://github.com/raganowicz/react-onclickoutside",
   "authors": [
     "Pomax <pomax@nihongoresources.com>",
-    "Tomasz Raganowicz <tomasz.raganowicz@gmail.com"
+    "Tomasz Raganowicz <tomasz.raganowicz@gmail.com>"
   ],
   "keywords": [
     "react",
@@ -32,7 +32,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "object-assign": "^4.0.1"
+    "object-assign": "^4.0.1",
+    "create-react-class": "^15.6.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
